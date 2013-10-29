@@ -29,7 +29,7 @@ class LazyPouffyCommand(sublime_plugin.TextCommand):
 					found = True
 
 				if found:	
-					if text[-1] == "}" or text[-1] == ';' :
+					if text[-1] == "}" or text[-1] == ';' or text[-1] == '/' :
 						break
 					dupText = text+ '\n' +dupText
 
